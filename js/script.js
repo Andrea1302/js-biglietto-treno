@@ -9,6 +9,7 @@ va applicato uno sconto del 40% per gli over 65.
 L’output del prezzo finale va messo fuori in forma umana 
 */
 
+const elemento = document.getElementById("mio_id");
 
 // Chiedere all utente quanti km deve percorrere 
 
