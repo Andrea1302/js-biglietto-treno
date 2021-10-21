@@ -49,6 +49,9 @@ elemento.innerHTML=  `Prezzo del Biglietto: ${quantoPagaOver65}€`;
     elemento.innerHTML= `Prezzo del Biglietto: ${prezzoBase}€`;
 }
 
+const now = new Date ();
+document.getElementById("ms_data").innerHTML = `${now}`;
+
 
 
 
