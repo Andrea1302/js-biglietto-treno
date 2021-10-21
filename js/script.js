@@ -24,6 +24,7 @@ console.log("Il prezzo al km è di:",(prezzoAlKm), "€");
 
 // Calcola il prezzo in base ai km inseriti dall utente ma senza sconto 
 let prezzoBase = quantiKm * prezzoAlKm;
+prezzoBase = prezzoBase.toFixed(2);
 console.log(prezzoBase);
 // inserire sconto per i minorenni
 let scontoMinori = ( prezzoBase * 20 ) /100;
@@ -36,14 +37,16 @@ console.log(scontoOver65);
 // stabilire se all utente spetterà qualche sconto e Fare vedere al cliente quanto deve pagare 
 if (quantiAnni < 18 ) {
 let quantoPagaMinore = prezzoBase - scontoMinori;
+quantoPagaMinore = quantoPagaMinore.toFixed(2);
 console.log(quantoPagaMinore);
 elemento.innerHTML = `Prezzo del Biglietto: ${quantoPagaMinore}€`;
 } else if ( quantiAnni > 65 ) {
 let quantoPagaOver65 = prezzoBase - scontoOver65;
+quantoPagaOver65 = quantoPagaOver65.toFixed(2)
 console.log(quantoPagaOver65);
 elemento.innerHTML=  `Prezzo del Biglietto: ${quantoPagaOver65}€`;
 } else {
-    elemento.innerHTML= `Prezzo del Biglietto:${prezzoBase}€`;
+    elemento.innerHTML= `Prezzo del Biglietto: ${prezzoBase}€`;
 }
 
 
