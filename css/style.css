@@ -20,8 +20,9 @@
 #mio_id{
     display: flex;
     justify-content: flex-end;
-    font-size: 40px;
+    font-size: 20px;
     margin-top: 10px;
+    font-style: italic;
 }
 #container_codice_barre{
     display: flex;
