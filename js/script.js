@@ -37,7 +37,12 @@ console.log(scontoOver65);
 if (quantiAnni < 18 ) {
 let quantoPagaMinore = prezzoBase - scontoMinori;
 console.log(quantoPagaMinore);
-elemento.innerHTML= `Prezzo del Biglietto (-20%): ${quantoPagaMinore}€`;
+elemento.innerHTML = `Prezzo del Biglietto (-20%): ${quantoPagaMinore}€`;
+} else if ( quantiAnni > 65 ) {
+let quantoPagaOver65 = prezzoBase - scontoOver65;
+console.log(quantoPagaOver65);
+elemento.innerHTML=  `Prezzo del Biglietto (-40%): ${quantoPagaOver65}€`;
 }
+
 
 
