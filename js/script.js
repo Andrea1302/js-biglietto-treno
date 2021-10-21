@@ -30,8 +30,13 @@ let scontoMinori = ( prezzoBase * 20 ) /100;
 console.log(scontoMinori);
 
 // inserire sconto per gli over 65
-
-// stabilire se all utente spetterà qualche sconto 
-
-// Fare vedere al cliente quanto deve pagare 
+let scontoOver65 = ( prezzoBase * 40) /100;
+console.log(scontoOver65);
+// stabilire se all utente spetterà qualche sconto e Fare vedere al cliente quanto deve pagare 
+if (quantiAnni < 18 ) {
+let quantoPagaMinore = prezzoBase - scontoMinori;
+console.log(quantoPagaMinore);
+elemento.innerHTML= `Prezzo del Biglietto (-20%): ${quantoPagaMinore}€`;
+}
+/
 
