@@ -1,0 +1,34 @@
+#container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#biglietto{
+    width: 60%;
+    margin: auto  auto;
+    border: 2px solid black;
+    background-color: #ccc;
+    position: relative;
+    padding: 20px;
+}
+
+#trenitalia{
+    width: auto;
+    height: 100px;
+}
+#mio_id{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    margin-top: 10px;
+}
+#container_codice_barre{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#codice_barre{
+    height: 100px;
+    width: auto;
+}
